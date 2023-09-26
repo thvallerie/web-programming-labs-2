@@ -1,0 +1,29 @@
+body {
+     margin: 0;
+}
+
+main {
+    margin-bottom: 40px;
+    padding: 10px;
+}
+
+header {
+    margin-bottom: 30px;
+    padding: 10px;
+    background:linear-gradient(to bottom right,rgb(103, 77, 56), rgb(181, 132, 90), rgb(114, 38, 38));
+    color: white;
+    font-style: italic;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background:linear-gradient(to bottom right,rgb(114, 38, 38), rgb(181, 132, 90),rgb(103, 77, 56));
+    color: white;
+    font-style: italic;
+    text-align: right;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
