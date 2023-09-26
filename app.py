@@ -8,7 +8,8 @@ def start ():
 
 @app.route('/lab2/example')
 def example():
-  return render_template('example.html')
+  name = 'Бут Валерия'
+  return render_template('example.html', name=name)
 
 @app.route("/menu")
 def menu ():
