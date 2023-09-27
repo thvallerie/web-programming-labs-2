@@ -35,6 +35,10 @@ books = [
         {'book' : 'Фауст', 'author' : 'Иоганн Гёте', 'zhanr' : 'Филосовская драма', 'str' : 350},
     ]
 
+@app.route('/lab2/')
+def lab2():
+    return render_template('lab2.html')
+
 @app.route("/menu")
 def menu ():
   return '''
