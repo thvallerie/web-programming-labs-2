@@ -39,6 +39,10 @@ books = [
 def lab2():
     return render_template('lab2.html')
 
+@app.route('/lab2/moodboard')
+def moodboard():
+    return render_template('moodboard.html')
+
 @app.route("/menu")
 def menu ():
   return '''
@@ -54,8 +58,15 @@ def menu ():
         <h1>web-сервер на flask</h1>
 
         <h3>Меню: </h3>
-        <a href="/lab1">Первая лабораторная работа</a>
-
+        <ol>
+          <li>
+          <a href="/lab1">Первая лабораторная работа</a>
+          </li>
+          <li>
+          <a href="/lab2">Вторая  лабораторная работа</a>
+          </li>
+        </ol>
+        
         <footer style="margin-top:20px;">
           &copy; Бут Валерия, ФБИ-13, 3 курс, 2023
         </footer>
