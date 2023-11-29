@@ -8,11 +8,14 @@
     <link rel="shortcut icon" href ="{{ url_for('static', filename='favicon.ico') }}">
     {% if request.cookies.get('color') %}
     <style>
-        body {
+       body {
             color: {{ request.cookies.get('color') }};
+            background-color: {{ request.cookies.get('color_bg') }};
+            font-size: {{ request.cookies.get('font_size') }}px;
         }
     </style>
-    {% endif %}
+    
+{% endif %}
 </head>
 <body>
     <header>
