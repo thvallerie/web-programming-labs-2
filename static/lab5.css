@@ -1,6 +1,6 @@
 /* Общие стили header */
 .line {
-    background-color: lightyellow;
+    background-color: rgb(181, 132, 90);
     padding: 20px;
     height: 45px;
     
@@ -50,7 +50,7 @@
   }
   
   .header-url-cre:hover {
-    background-color: #ddd;
+    background-color: #cc8b8b;
   }
   
   /* Стили для вывода имени пользователя */
@@ -76,7 +76,7 @@
 .button1 {
     display: inline-flex;
     border-radius: 13px;
-    background-color: antiquewhite;
+    background-color: rgb(160, 149, 139);
 }
 
 .username {
@@ -85,7 +85,7 @@
 
 a {
     text-decoration: none;
-    color: turquoise;
+    color: rgb(62, 61, 61);
 }
 
 body {
