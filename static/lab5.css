@@ -1,6 +1,6 @@
 /* Общие стили header */
 .line {
-    background-color: rgb(181, 132, 90);
+    background:linear-gradient(to bottom right,rgb(103, 77, 56), rgb(181, 132, 90), rgb(114, 38, 38));
     padding: 20px;
     height: 45px;
     
@@ -19,14 +19,14 @@
     margin-bottom: 10px;
   }
   
-  /* Стили для кнопок */
+  /* Стиль для кнопок */
   .header-url-zam {
     display: inline-block;
     padding: 8px 12px;
     margin-right: 10px;
     width: 180px;
     border: none;
-    color: #333;
+    color: #757474;
     text-decoration: none;
     font-size: 14px;
     cursor: pointer;
@@ -50,10 +50,10 @@
   }
   
   .header-url-cre:hover {
-    background-color: #cc8b8b;
+    background-color:  rgb(139, 120, 96);
   }
   
-  /* Стили для вывода имени пользователя */
+  /* Стиль для вывода имени пользователя */
   .header-username {
     font-size: 16px;
     font-weight: bold;
@@ -76,7 +76,7 @@
 .button1 {
     display: inline-flex;
     border-radius: 13px;
-    background-color: rgb(160, 149, 139);
+    background-color: rgb(122, 122, 121);
 }
 
 .username {
@@ -85,7 +85,7 @@
 
 a {
     text-decoration: none;
-    color: rgb(62, 61, 61);
+    color: rgb(35, 35, 35);
 }
 
 body {
