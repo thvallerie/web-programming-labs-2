@@ -17,8 +17,8 @@ def dbConnect():
     return conn
 
 
-def dbClose(cursor, connection):
-    cursor.close()
+def dbClose(cursor, connection): #сначала вызывает метод close() для объекта cursor, чтобы закрыть курсор и освободить связанные с ним ресурсы
+    cursor.close()               #метод close() для объекта connection, чтобы закрыть соединение с базой данных и освободить ресурсы
     connection.close()
 
 
@@ -29,12 +29,13 @@ def lab():
 
 @lab5.route("/lab5/")
 def main():
-    conn = dbConnect()
-    cur = conn.cursor()
+    conn = dbConnect() #подключили к базам
+    cur = conn.cursor() #осуществили подключение к SQL
 
     cur.execute("select * from users")
 
-    result = cur.fetchall()
+    result = cur.fetchall() #извлечения всех строк результата выполнения запроса, который ранее был 
+                            #выполнен через курсор
 
     print(result)
 
@@ -89,8 +90,8 @@ def registrPage():
     hashPassword = bcrypt.generate_password_hash(password).decode('utf-8')
 
 
-    conn = dbConnect()
-    cur = conn.cursor()
+    conn = dbConnect() # устанавливает соединение с базой данных
+    cur = conn.cursor() #далее создается объект курсора для выполнения SQL-запросов к базе данных через установленное соединение
 
     cur.execute("SELECT username FROM users WHERE username = %s;", (username,))
     if cur.fetchone() is not None:
@@ -141,7 +142,7 @@ def loginPage():
     print(password)
 
     pw_hash = bcrypt.generate_password_hash(password, 10)
-    hash = bcrypt.check_password_hash(pw_hash, password) # returns True
+    hash = bcrypt.check_password_hash(pw_hash, password) # returns True 
 
     if hash:
         session['id'] = userID
