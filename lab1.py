@@ -39,6 +39,12 @@ def menu ():
           <li>
           <a href="/lab5">Пятая лабораторная работа</a>
           </li>
+          <li>
+          <a href="/lab6/register">Шестая лабораторная работа</a>
+          <li>
+          <a href="/lab7">Седьмая лабораторная работа</a>
+          </li>
+          </li>
         </ol>
 
         <footer style="margin-top:20px;">

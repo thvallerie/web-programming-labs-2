@@ -14,8 +14,9 @@
             font-size: {{ request.cookies.get('font_size') }}px;
         }
     </style>
-    
+
 {% endif %}
+{% block script %}{% endblock%}
 </head>
 <body>
     <header>
