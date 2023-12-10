@@ -2,7 +2,7 @@
 .line {
     background:linear-gradient(to bottom right,rgb(103, 77, 56), rgb(181, 132, 90), rgb(114, 38, 38));
     padding: 20px;
-    height: 45px;
+    height: 55px;
     
   }
   
@@ -11,7 +11,7 @@
     font-size: 24px;
     margin-bottom: 10px;
     display: inline-flex;
-    width: 700px;
+    width: 600px;
   }
   
   .header-subtitle {
